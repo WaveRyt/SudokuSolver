@@ -5,7 +5,6 @@ ALL_POSSIBLE = set(i for i in range(1, 10))
 def box_idx(r: int, c: int) -> int:
     return (r // 3) * 3 + (c // 3)
 
-
 def solve(board: List[List[str]], rows: List[Set[int]], cols: List[Set[int]], boxes: List[Set[int]]) -> bool:
     best_row, best_col = -1, -1
     best_allowed = None
